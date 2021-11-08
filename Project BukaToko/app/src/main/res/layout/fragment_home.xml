@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:scrollingCache="true"
+		android:scrollbars="none">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:descendantFocusability="blocksDescendants"
+			android:orientation="vertical">
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/spacing_large"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/spacing_middle"
+				android:paddingRight="@dimen/spacing_middle">
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/spacing_xsmall"
+					android:layout_marginTop="@dimen/spacing_xsmall"
+					android:layout_marginRight="@dimen/spacing_xsmall"
+					android:layout_marginBottom="@dimen/spacing_xsmall"
+					android:clickable="true"
+					android:foreground="?android:attr/selectableItemBackground"
+					app:cardElevation="1.0dip"
+					app:cardCornerRadius="@dimen/card_radius"
+					android:layout_weight="1.0"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="@dimen/spacing_large">
+
+						<RelativeLayout
+							android:layout_width="40.0dip"
+							android:layout_height="40.0dip">
+
+							
+
+							<ImageView
+								android:layout_width="22.0dip"
+								android:layout_height="22.0dip"
+								android:tint="@color/grey_selector"
+								android:layout_centerInParent="true"
+								app:srcCompat="@drawable/ic_order_dashboard"/>
+
+						</RelativeLayout>
+
+						<View
+							android:layout_width="@dimen/spacing_middle"
+							android:layout_height="0.0dip"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="fill_parent"
+							android:orientation="vertical">
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+								android:text="0"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"/>
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+								android:text="Pesanan Baru"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_centerInParent="true"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/spacing_xsmall"
+					android:layout_marginTop="@dimen/spacing_xsmall"
+					android:layout_marginRight="@dimen/spacing_xsmall"
+					android:layout_marginBottom="@dimen/spacing_xsmall"
+					android:clickable="true"
+					android:foreground="?android:attr/selectableItemBackground"
+					app:cardElevation="1.0dip"
+					app:cardCornerRadius="@dimen/card_radius"
+					android:layout_weight="1.0"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="@dimen/spacing_large">
+
+						<RelativeLayout
+							android:layout_width="40.0dip"
+							android:layout_height="40.0dip">
+
+					
+							<ImageView
+								android:layout_width="22.0dip"
+								android:layout_height="22.0dip"
+								android:tint="@color/grey_selector"
+								android:layout_centerInParent="true"
+								app:srcCompat="@drawable/ic_member_dashboard"/>
+
+						</RelativeLayout>
+
+						<View
+							android:layout_width="@dimen/spacing_middle"
+							android:layout_height="0.0dip"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="fill_parent"
+							android:orientation="vertical">
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+								android:text="0"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+								android:text="Member"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</androidx.cardview.widget.CardView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/spacing_middle"
+				android:paddingRight="@dimen/spacing_middle">
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/spacing_xsmall"
+					android:layout_marginTop="@dimen/spacing_xsmall"
+					android:layout_marginRight="@dimen/spacing_xsmall"
+					android:layout_marginBottom="@dimen/spacing_xsmall"
+					android:clickable="true"
+					android:foreground="?android:attr/selectableItemBackground"
+					app:cardElevation="1.0dip"
+					app:cardCornerRadius="@dimen/card_radius"
+					android:layout_weight="1.0"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="@dimen/spacing_large">
+
+						<RelativeLayout
+							android:layout_width="40.0dip"
+							android:layout_height="40.0dip">
+
+							
+
+							<ImageView
+								android:layout_width="22.0dip"
+								android:layout_height="22.0dip"
+								android:tint="@color/grey_selector"
+								android:layout_centerInParent="true"
+								app:srcCompat="@drawable/ic_produk"/>
+
+						</RelativeLayout>
+
+						<View
+							android:layout_width="@dimen/spacing_middle"
+							android:layout_height="0.0dip"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="fill_parent"
+							android:orientation="vertical">
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+								android:text="0"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+								android:text="Produk"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/spacing_xsmall"
+					android:layout_marginTop="@dimen/spacing_xsmall"
+					android:layout_marginRight="@dimen/spacing_xsmall"
+					android:layout_marginBottom="@dimen/spacing_xsmall"
+					android:clickable="true"
+					android:foreground="?android:attr/selectableItemBackground"
+					app:cardElevation="1.0dip"
+					app:cardCornerRadius="@dimen/card_radius"
+					android:layout_weight="1.0"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="@dimen/spacing_large">
+
+						<RelativeLayout
+							android:layout_width="40.0dip"
+							android:layout_height="40.0dip">
+
+							
+
+							<ImageView
+								android:layout_width="22.0dip"
+								android:layout_height="22.0dip"
+								android:tint="@color/grey_selector"
+								android:layout_centerInParent="true"
+								app:srcCompat="@drawable/ic_pengiriman_dashboard"/>
+
+						</RelativeLayout>
+
+						<View
+							android:layout_width="@dimen/spacing_middle"
+							android:layout_height="0.0dip"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="fill_parent"
+							android:orientation="vertical">
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+								android:text="0"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+								android:text="Pengiriman"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</androidx.cardview.widget.CardView>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:paddingLeft="@dimen/spacing_middle"
+				android:paddingRight="@dimen/spacing_middle">
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/spacing_xsmall"
+					android:layout_marginTop="@dimen/spacing_xsmall"
+					android:layout_marginRight="@dimen/spacing_xsmall"
+					android:layout_marginBottom="@dimen/spacing_xsmall"
+					android:clickable="true"
+					android:foreground="?android:attr/selectableItemBackground"
+					app:cardElevation="1.0dip"
+					app:cardCornerRadius="@dimen/card_radius"
+					android:layout_weight="1.0"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="@dimen/spacing_large">
+
+						<RelativeLayout
+							android:layout_width="40.0dip"
+							android:layout_height="40.0dip">
+
+							
+
+							<ImageView
+								android:layout_width="22.0dip"
+								android:layout_height="22.0dip"
+								android:tint="@color/grey_selector"
+								android:layout_centerInParent="true"
+								app:srcCompat="@drawable/ic_chat"/>
+
+						</RelativeLayout>
+
+						<View
+							android:layout_width="@dimen/spacing_middle"
+							android:layout_height="0.0dip"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="fill_parent"
+							android:orientation="vertical">
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+								android:text="0"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+								android:text="Chat"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</androidx.cardview.widget.CardView>
+
+				<androidx.cardview.widget.CardView
+					android:layout_width="0.0dip"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/spacing_xsmall"
+					android:layout_marginTop="@dimen/spacing_xsmall"
+					android:layout_marginRight="@dimen/spacing_xsmall"
+					android:layout_marginBottom="@dimen/spacing_xsmall"
+					android:clickable="true"
+					android:foreground="?android:attr/selectableItemBackground"
+					app:cardElevation="1.0dip"
+					app:cardCornerRadius="@dimen/card_radius"
+					android:layout_weight="1.0"
+					android:visibility="visible">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:orientation="horizontal"
+						android:padding="@dimen/spacing_large">
+
+						<RelativeLayout
+							android:layout_width="40.0dip"
+							android:layout_height="40.0dip">
+
+
+							<ImageView
+								android:layout_width="22.0dip"
+								android:layout_height="22.0dip"
+								android:tint="@color/grey_selector"
+								android:layout_centerInParent="true"
+								app:srcCompat="@drawable/ic_apk_dashboard"/>
+
+						</RelativeLayout>
+
+						<View
+							android:layout_width="@dimen/spacing_middle"
+							android:layout_height="0.0dip"/>
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="fill_parent"
+							android:orientation="vertical">
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+								android:text="0"
+								android:textStyle="bold"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+							<TextView
+								android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+								android:text="Unduhan Apk"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"/>
+
+						</LinearLayout>
+
+					</LinearLayout>
+
+				</androidx.cardview.widget.CardView>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+        android:id="@+id/home"
+		android:icon="@drawable/ic_home"
+        android:title="Home"/>
+	
+
+	<item
+        android:id="@+id/produk"
+		android:icon="@drawable/ic_produk"
+        android:title="Produk"/>
+    
+	<item
+        android:id="@+id/chat"
+		android:icon="@drawable/ic_chat"
+        android:title="Chat"/>
+	
+	<item
+        android:id="@+id/penjualan"
+		android:icon="@drawable/ic_penjualan"
+        android:title="Penjualan"/>
+	
+	<item
+        android:id="@+id/aplikasi"
+		android:icon="@drawable/ic_lainnya"
+        android:title="Aplikasi"/>
+    
+</menu>
