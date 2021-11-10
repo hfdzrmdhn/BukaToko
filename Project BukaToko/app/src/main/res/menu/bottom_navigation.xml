@@ -20,7 +20,7 @@
 	<item
         android:id="@+id/penjualan"
 		android:icon="@drawable/ic_penjualan"
-        android:title="Penjualan"/>
+        android:title="Pesanan"/>
 	
 	<item
         android:id="@+id/aplikasi"

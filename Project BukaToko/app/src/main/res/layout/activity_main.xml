@@ -56,6 +56,6 @@
 		app:elevation="0dp"
 		app:labelVisibilityMode="labeled"
 		app:menu="@menu/bottom_navigation"/>
-	
+	 
 	
 </RelativeLayout>

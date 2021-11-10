@@ -8,7 +8,7 @@ import android.view.View;
 
 public class SplashActivity extends AppCompatActivity {
 	
-	private int loading = 3500;
+	private int loading = 2500;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

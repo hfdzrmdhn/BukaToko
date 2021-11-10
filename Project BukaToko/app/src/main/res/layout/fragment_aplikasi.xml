@@ -19,6 +19,50 @@
 			android:background="@android:color/white">
 
 			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:minHeight="?actionBarSize"
+				android:gravity="center_vertical"
+				android:orientation="vertical"
+				android:background="#FFF1F8FD"
+				android:padding="@dimen/spacing_large">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:background="?selectableItemBackground">
+
+					<TextView
+						android:text="Tokoku"
+						android:textSize="20dp"
+						android:textStyle="bold"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+				</LinearLayout>
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="10dp"/>
+
+				<TextView
+					android:text="@string/edit_app"
+					android:gravity="center"
+					android:clickable="true"
+					android:background="?selectableItemBackground"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:typeface="sans"
+					android:textColor="@color/colorPrimary"
+					android:inputType="textMultiLine"
+					android:id="@+id/editAplikasi"/>
+
+			</LinearLayout>
+
+			<LinearLayout
 				android:orientation="vertical"
 				android:paddingTop="@dimen/spacing_middle"
 				android:layout_width="match_parent"
@@ -428,6 +472,47 @@
 						android:layout_height="wrap_content"
 						android:layout_weight="1.0"
 						android:text="Icon Kategori"/>
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:tint="@color/grey_selector"
+						app:srcCompat="@drawable/ic_row_right"/>
+
+				</LinearLayout>
+
+				<View
+					android:background="#FFEEEEEE"
+					android:layout_width="fill_parent"
+					android:layout_height="1.0px"/>
+
+				<LinearLayout
+					android:gravity="center_vertical"
+					android:orientation="horizontal"
+					android:background="?selectableItemBackground"
+					android:paddingLeft="@dimen/spacing_large"
+					android:paddingRight="@dimen/spacing_large"
+					android:clickable="true"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:minHeight="@dimen/spacing_xxlarge">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:tint="@color/grey_selector"
+						app:srcCompat="@drawable/ic_home"/>
+
+					<View
+						android:layout_width="@dimen/spacing_middle"
+						android:layout_height="fill_parent"/>
+
+					<TextView
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="1.0"
+						android:text="Kategori Produk"/>
 
 					<ImageView
 						android:layout_width="wrap_content"

@@ -7,14 +7,15 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import android.view.MenuItem;
 import androidx.fragment.app.Fragment;
 import androidx.appcompat.app.ActionBar;
-import androidx.core.content.ContextCompat;
-import android.view.View;
+import androidx.fragment.app.FragmentTransaction;
+
 
 public class MainActivity extends AppCompatActivity {
 	
     private Toolbar toolbar;
 	private ActionBar toolbarTitle;
 	private BottomNavigationView bottomNav;
+    
 	
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 		
 		
+    
 		
         toolbar = (Toolbar) findViewById(R.id.mainToolbar);
         setSupportActionBar(toolbar);
@@ -51,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
 						break;
 					case R.id.penjualan:
 						selectedFragment = new FragmentPenjualan();
-						toolbarTitle.setTitle("Penjualan");
+						toolbarTitle.setTitle("Pesanan");
 						break;
 					case R.id.aplikasi:
 						selectedFragment = new FragmentAplikasi();
@@ -59,9 +61,15 @@ public class MainActivity extends AppCompatActivity {
 						break;
 						
 				}
-				getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, selectedFragment).commit();
+				FragmentTransaction transaction =
+				getSupportFragmentManager()
+				.beginTransaction();
+				transaction.replace(R.id.frame_container, selectedFragment);
+				transaction.addToBackStack(null);
+				transaction.commit();
 				return true;
 			}
+				
 		});
         
     }
